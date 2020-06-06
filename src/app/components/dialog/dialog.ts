@@ -156,6 +156,7 @@ export class Dialog implements AfterViewInit,AfterViewChecked,OnDestroy {
     }
 
     set visible(val:boolean) {
+        console.log('DDDDDDD');
         this._visible = val;
         
         if(this.initialized && this.containerViewChild && this.containerViewChild.nativeElement) {
